@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DataBindingComponent } from './data-binding.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { InputPropertiesComponent } from './input-properties/input-properties.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule
   ],
-  declarations: [DataBindingComponent],
-  exports:[DataBindingComponent]
+  declarations: [DataBindingComponent, InputPropertiesComponent],
+  exports:[DataBindingComponent, InputPropertiesComponent]
 })
 export class DataBindingModule { }
