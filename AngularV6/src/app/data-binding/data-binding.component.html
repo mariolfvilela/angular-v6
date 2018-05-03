@@ -8,12 +8,34 @@
   <article>
     <div>
       <select #classe (change)="0">
-        <option value="alert">Alert</option>
+        <option value="warning">Warning</option>
         <option value="success">Success</option>
         <option value="danger">Danger</option>
         <option value="info">Info</option>
       </select>
-      <alert type="info">hello</alert>
+      <alert [type]="classe.value"><strong>hello</strong></alert>
     </div>
+  </article>
+</section>
+<section id="EventBinding">
+  <article >
+    <button class="btn btn-primary" (click)="showClick()">Click me!</button>
+
+    <input type="text" #valor 
+    (keyup)="onKeyUp($event)"
+    (keyup.enter)="salvarValor(valor.value)"
+    (blur)="salvarValor(valor.value)">
+    <br/><br/>
+    <p>Valor atual apresentado: {{ valorAtual}}</p>
+    <p>Valor salvo: {{ valorSalvo}}</p>
+    <br/>
+    <p>
+      <span
+      (mouseover)="onMouseOverOut()"
+      (mouseout)="onMouseOverOut()"
+      [class.highlight]="isMouseOver"
+      >
+      Style ao passar o mouse!
+    </span></p>
   </article>
 </section>
