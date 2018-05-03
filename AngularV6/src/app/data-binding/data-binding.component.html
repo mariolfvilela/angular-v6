@@ -39,3 +39,20 @@
     </span></p>
   </article>
 </section>
+<section id="two-way-data-binding">
+  <article>
+    <h3>Two-Way data binding</h3>
+    <div>
+      <input [value]="nome" 
+      (input)="nome=$event.target.value"
+      type="text">
+      <br/>
+      <input [ngModel]="nome" 
+      (ngModelChange)="nome=$event"      
+      type="text"> <br/> 
+      <input [(ngModel)]="nome" type="text"> 
+    
+    </div>
+<div><p>Você digitou: {{ nome }}</p></div>
+  </article>
+</section>
