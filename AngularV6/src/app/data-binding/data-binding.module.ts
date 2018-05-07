@@ -4,6 +4,7 @@ import { DataBindingComponent } from './data-binding.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { InputPropertiesComponent } from './input-properties/input-properties.component';
+import { OutPutPropertyComponent } from './out-put-property/out-put-property.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { InputPropertiesComponent } from './input-properties/input-properties.co
     CommonModule,
     FormsModule
   ],
-  declarations: [DataBindingComponent, InputPropertiesComponent],
-  exports:[DataBindingComponent, InputPropertiesComponent]
+  declarations: [DataBindingComponent, InputPropertiesComponent, OutPutPropertyComponent],
+  exports:[DataBindingComponent, InputPropertiesComponent, OutPutPropertyComponent]
 })
 export class DataBindingModule { }

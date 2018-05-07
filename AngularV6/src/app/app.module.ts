@@ -7,6 +7,7 @@ import { MyFirstComponent } from './my-first/my-first.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DataBindingModule } from './data-binding/data-binding.module';
+import { DiretivaModule } from './diretiva/diretiva.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DataBindingModule } from './data-binding/data-binding.module';
     AlertModule.forRoot(),
     BrowserModule,
     CursosModule,
-    DataBindingModule
+    DataBindingModule,
+    DiretivaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
