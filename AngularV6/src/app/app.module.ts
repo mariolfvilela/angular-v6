@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AlertModule } from 'ngx-bootstrap';
+import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 import { MyFirstComponent } from './my-first/my-first.component';
@@ -15,6 +16,7 @@ import { DiretivaModule } from './diretiva/diretiva.module';
     MyFirstComponent
   ],
   imports: [
+    MaterializeModule,
     AlertModule.forRoot(),
     BrowserModule,
     CursosModule,
