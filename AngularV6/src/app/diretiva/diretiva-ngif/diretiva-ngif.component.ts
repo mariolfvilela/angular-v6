@@ -7,7 +7,7 @@ import {MaterializeAction} from 'angular2-materialize';
   styleUrls: ['./diretiva-ngif.component.css']
 })
 export class DiretivaNgifComponent implements OnInit {
-  selectOptions: any = ['teste1'];
+  selectOptions: string[] = ['teste1'];
   modalActions = new EventEmitter<string|MaterializeAction>();
   
   constructor() { }
