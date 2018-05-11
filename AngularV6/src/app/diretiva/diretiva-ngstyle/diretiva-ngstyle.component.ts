@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgstyleComponent implements OnInit {
 
-  tamanhaFonte: number = 10;
+  tamanhoFonte: number = 10;
   ativo: boolean = false;
 
   constructor() { }

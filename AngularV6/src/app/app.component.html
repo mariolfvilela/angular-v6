@@ -20,10 +20,19 @@
       </div>
     </article>
   </section>
-  <contador 
+  <contador
     (mudouValor)="onMudouValor($event)"
     [valor]="valorInicial">
   </contador>
 </section>
 
 <diretiva-ngif></diretiva-ngif>
+<app-exemplo-ng-content>
+  <div class="titulo">Título do Painel</div>
+    <div class="corpo">
+        Conteúdo passado para o componente.
+    </div>
+    <div class="corpo">
+        Conteúdo passado para o componente 2.
+    </div>
+</app-exemplo-ng-content>
